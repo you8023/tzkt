@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2018-05-04作业</title>
+    <style type="text/css" media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            width: 500px;
+            height: 343px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 5px 5px 10px #E7E7E7;
+        }
+        #main {
+            width: 500px;
+            height: 343px;
+        }
+        #hover {
+            background: rgba(0, 0, 0, 0.5);
+            width: 520px;
+            height: 50px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            line-height: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <img src="./mla.jpg" height="343" width="500" alt="">
+        </div>
+        <div id="hover">
+            <p>超级马里奥</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" charset="utf-8">
+    var container = document.getElementById('container');
+    var hover = document.getElementById('hover');
+    container.onmouseenter = function () {
+        hover.style.display = 'block';
+    }
+    container.onmouseleave = function () {
+        hover.style.display = 'none';
+    }
+</script>
+</html>
